@@ -23,10 +23,10 @@ Each object (in the input array) will not have any nested objects as values.
 
 // }
 
-function addObjects(arrayOfObjects) {
+function addObjects(...objects) {
   // Write your code here.
   const finalObj = {};
-  for (const obj of arrayOfObjects) {
+  for (const obj of objects) {
     for (const [key, value] of Object.entries(obj)) {
       if (!finalObj.hasOwnProperty(key)) {
         finalObj[key] = value;
@@ -38,6 +38,6 @@ function addObjects(arrayOfObjects) {
   return finalObj;
 }
 
-module.export = {
-    addObjects
-}
+module.exports = {
+  addObjects,
+};
