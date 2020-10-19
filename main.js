@@ -18,24 +18,8 @@ Each object (in the input array) will not have any nested objects as values.
 
 //👉 Write the function your CodeWarriors will start with below here:
 
-// function addObjects(arrayOfObjects) {
-//   // Write your code here.
-
-// }
-
-function addObjects(...objects) {
+function addObjects(arrayOfObjects) {
   // Write your code here.
-  const finalObj = {};
-  for (const obj of objects) {
-    for (const [key, value] of Object.entries(obj)) {
-      if (!finalObj.hasOwnProperty(key)) {
-        finalObj[key] = value;
-      } else {
-        finalObj[key] += value;
-      }
-    }
-  }
-  return finalObj;
 }
 
 module.exports = {
