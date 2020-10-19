@@ -1,7 +1,7 @@
 /* 
 👉 Write your kata here!
 
-Write a function that takes ANY array of objects (below is just an example):
+Write a function that takes ANY number of objects (below is just an example):
 [
     {a: 1, b: 2},
     {a: 2, b: 7, c: 3},
@@ -18,7 +18,7 @@ Each object (in the input array) will not have any nested objects as values.
 
 //👉 Write the function your CodeWarriors will start with below here:
 
-function addObjects(arrayOfObjects) {
+function addObjects(...objects) {
   // Write your code here.
 }
 
